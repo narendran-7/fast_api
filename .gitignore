@@ -1,0 +1,14 @@
+*.log
+
+__pycache__
+
+bin
+
+lib
+lib64
+include
+share
+
+*.pyc
+
+*.whl
