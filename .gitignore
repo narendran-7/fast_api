@@ -12,3 +12,4 @@ share
 *.pyc
 
 *.whl
+.vscode

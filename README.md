@@ -13,7 +13,7 @@
   *  > ### sudo apt install python3.8-venv
 ---
 * Create virtual enviroment
-   * > ### python3 -m venv TestNote
+   * > ### python3 -m venv env
 ---
 * Move inside virtual enviroment
    * > ### source TestNote/bin/activate
