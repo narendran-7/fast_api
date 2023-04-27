@@ -1,9 +1,14 @@
+# -------------Core packages------------------------------------
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-# -------------------------------------------------
+# -------------Other packages------------------------------------
+from json import loads
+
+# -------------Own logics------------------------------------
 from logic import FindRate
 
+# -------------------------------------------------
 
 app = FastAPI()
 
@@ -15,7 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
     )
 
-@app.get("/")
+@app.get("/", tags=["Rate"])
 def index():
     obj = FindRate()
 
@@ -26,17 +31,17 @@ def index():
         }
 
 
-@app.get("/gold")
+@app.get("/gold", tags=["Rate"])
 def gold():
     obj = FindRate()
     return {"gold": obj.gold()}
 
-@app.get("/silver")
+@app.get("/silver", tags=["Rate"])
 def silver():
     obj = FindRate()
     return {"silver": obj.silver()}
 
-@app.get("/platinum")
+@app.get("/platinum", tags=["Rate"])
 def platinum():
     obj = FindRate()
     return {"platinum": obj.platinum()}
