@@ -1,6 +1,6 @@
 # __fastApi__ 
 
-##   <p> Create CRUD operation </p>
+##   <p> Metal Price </p>
 
 
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1023%2F1*du7p50wS_fIsaC_lR18qsg.png&f=1&nofb=1" style="width:600px;"/>
@@ -25,8 +25,8 @@
     * > ### pip3 install -r requirements.txt
 ---
 * Create dir "Learner" (contain **working files**) ,add move 
-    * > ### mkdir Learner
-    * > ### cd Learner
+    * > ### mkdir "< file_dir >"
+    * > ### cd "< file_dir >"
 
 ---
 ## Role of Code
@@ -35,7 +35,7 @@
     * code...
 ---
 * Start server
-    * > ### uvicorn Learner.main:app --reload
+    * > ### uvicorn main:app --reload
     * ### Swagger-UI
         * <u>http://127.0.0.1:8000/docs</u>
 ---
